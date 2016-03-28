@@ -4,7 +4,9 @@ The resulting datafile tidy.csv is described below.
 #Identifier:
 
 Subject (ID of the test subject)
+
 and
+
 Activity (different activities performed using smartphone)
 
 #Activity levels:
