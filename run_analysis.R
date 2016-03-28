@@ -1,10 +1,14 @@
+#load required library
 library(reshape2)
+# check for the zip file in the current directory and if not present download it
 zipfilename<-"getdata-projectfiles-UCI HAR Dataset.zip"
 ## Download the zip file containing dataset:
 if(!file.exists(zipfilename)){
         fileURL<-"https://d396qusza40orc.cloudfront.net/getdata%2Fprojectfiles%2FUCI%20HAR%20Dataset.zip"
         download.file(fileURL,zipfilename,method="curl")
 }
+
+# if the downloaded file is not unzipped then unzip it
 if(!file.exists("UCI HAR Dataset")){
         unzip(zipfilename)
 }
@@ -34,9 +38,11 @@ colnames(final_data)<-c("subject","activity",dataWanted_names)
 #Now turn activities and subjects into factors
 final_data$activity<-factor(final_data$activity,levels=activity_labels[,1],labels=activity_labels[,2])
 final_data$subject<-as.factor(final_data$subject)
-
+#now arrange data and get the mean
 final_data_melted<-melt(final_data,id=c("subject","activity"))
 final_data_mean<-dcast(final_data_melted,subject + activity ~ variable,mean)
+
+# now save the nicely arranged and cleaned data in a text file for future use
 
 #write.table(final_data_mean,file="tidy.csv",sep=",",row.names = FALSE,quote=FALSE)
 write.table(final_data_mean,file="tidy.txt",row.names = FALSE,quote=FALSE)
