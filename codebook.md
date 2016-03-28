@@ -18,7 +18,6 @@ LAYING (6)
 
 Measurements:
 The list below gives the type of measurents performed.
-
 tBodyAccMeanX
 tBodyAccMeanY
 tBodyAccMeanZ
