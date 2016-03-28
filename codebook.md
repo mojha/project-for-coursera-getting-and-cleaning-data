@@ -1,12 +1,13 @@
+#Introduction:
 The resulting datafile tidy.csv is described below.
 
-Identifier:
+#Identifier:
 
 Subject (ID of the test subject)
 and
 Activity (different activities performed using smartphone)
 
-Activity levels:
+#Activity levels:
 
 Six different activity levels were performed.
 WALKING (1)
@@ -22,7 +23,7 @@ STANDING (5)
 LAYING (6)
 
 
-Measurements:
+#Measurements:
 The list below gives the type of measurents performed.
 
 tBodyAccMeanX
