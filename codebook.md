@@ -10,11 +10,17 @@ Activity levels:
 
 Six different activity levels were performed.
 WALKING (1)
+
 WALKING_UPSTSIRS  (2)
+
 WALKING_DOWNSTAIRS (3)
+
 SITTING (4)
+
 STANDING (5)
+
 LAYING (6)
+
 
 Measurements:
 The list below gives the type of measurents performed.
