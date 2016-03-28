@@ -1,6 +1,6 @@
 #Introduction:
 
-The resulting clean data is stored in a datafile named tidy.csv.
+The resulting clean data is stored in a data file named tidy.csv.
 
 #Identifier:
 
