@@ -1,4 +1,4 @@
-# smartphones
+# Coursera project for getting and cleaning data
 Introduction:
 This project is solution to the course project for the getting and cleaning data final course project.
 The purpase of the project is to check the participant's ability to collect, work with, and clean a data 
